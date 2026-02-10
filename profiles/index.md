@@ -18,8 +18,8 @@ Each entry includes background, reputation, and operational impact.
 
 ### Arcturus Wingman  
 **Species:** Talanori  
-**Occupation:** Entrepreneur, Founder and Owner of Wingman and Paladin's • Legal Manipulator 
-**Affiliation:** Wingman and Paladin's, Centaria 
+**Occupation:** Founder and Owner of Wingman and Paladin's ; Legal Manipulator  
+**Affiliation:** Wingman and Paladin's; Centaria 
 
 A master of exploiting legal systems and financial structures.
 Responsible for multiple economic collapses and corporate revivals.
@@ -35,7 +35,7 @@ Responsible for multiple economic collapses and corporate revivals.
 
 ### Jiroshi Ashikaga  
 **Species:** Human  
-**Occupation:** Entrepreneur, Co-founder of Wingman and Paladin's • Geologist  
+**Occupation:** Co-founder of Wingman and Paladin's • Geologist  
 **Affiliation:** Wingman and Paladin's, Centaria
 
 An elite combatant capable of defeating masters without Nova assistance.
@@ -52,7 +52,7 @@ Wields a rune-enchanted blade and an evolved Nova.
 
 ### Vonithur Tolvoski  
 **Species:** Detith  
-**Occupation:** Hitman • Operative  
+**Occupation:** Hitman ; Operative  
 **Affiliation:** Contract-based
 
 Executed one of the most complex long-range assassinations in recorded history.
@@ -69,7 +69,7 @@ Specializes in impossible-angle targeting.
 
 ### Koneiro Aranushiq  
 **Species:** Talanori  
-**Occupation:** Head of Centaria • Professional Heist  
+**Occupation:** Head of Centaria ; Professional Heist  
 **Affiliation:** Independent / Underground Networks
 
 Architect of the trillion-unit treasury heist.
