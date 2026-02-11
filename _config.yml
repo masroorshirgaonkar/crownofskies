@@ -1,8 +1,8 @@
 title: Crown of Skies
-description: Transmedia Archive of an Expanding Universe
+description: A transmedia worldbuilding project
+theme: null
 
 baseurl: "/crownofskies"
 url: "https://masroorshirgaonkar.github.io"
 
 markdown: kramdown
-theme: default
