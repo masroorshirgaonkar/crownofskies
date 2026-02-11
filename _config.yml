@@ -5,4 +5,4 @@ baseurl: "/crownofskies"
 url: "https://masroorshirgaonkar.github.io"
 
 markdown: kramdown
-theme: null
+theme: default
