@@ -1,0 +1,83 @@
+/* Base */
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: #0f1220;
+  color: #e6e8f0;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Page container */
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+h1 {
+  border-bottom: 2px solid #2c2f4a;
+  padding-bottom: 0.5rem;
+}
+
+/* Links */
+
+a {
+  color: #7aa2ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Sections */
+
+hr {
+  border: none;
+  border-top: 1px solid #2c2f4a;
+  margin: 2rem 0;
+}
+
+/* Profile blocks */
+
+h3 {
+  margin-top: 2rem;
+}
+
+strong {
+  color: #c9d2ff;
+}
+
+/* Blockquotes */
+
+blockquote {
+  border-left: 3px solid #7aa2ff;
+  padding-left: 1rem;
+  color: #b8c0ff;
+  opacity: 0.9;
+}
+
+/* Footer (optional) */
+
+footer {
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
