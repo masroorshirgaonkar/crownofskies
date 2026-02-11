@@ -5,7 +5,7 @@ title: Profiles
 
 # Profiles
 
-Biographical records of influential individuals and organizations
+Biographical records of influential individuals and organizations  
 shaping the Crown of Skies universe.
 
 Each entry includes background, reputation, and operational impact.
@@ -14,126 +14,154 @@ Each entry includes background, reputation, and operational impact.
 
 ## Key Individuals
 
----
+<div class="card-grid">
 
-### Arcturus Wingman  
-**Species:** Talanori  
-**Occupation:** Founder and Owner of Wingman and Paladin's ; Legal Manipulator  
-**Affiliation:** Wingman and Paladin's; Centaria 
+  <div class="profile-card">
+    <h3>Arcturus Wingman</h3>
 
-A master of exploiting legal systems and financial structures.
-Responsible for multiple economic collapses and corporate revivals.
+    <p><strong>Species:</strong> Talanori</p>
+    <p><strong>Occupation:</strong> Founder of Wingman and Paladin's · Legal Manipulator</p>
+    <p><strong>Affiliation:</strong> Wingman and Paladin's · Centaria</p>
 
-**Known For:**  
-- Untraceable financial operations  
-- Large-scale organizational control  
-- Psychological warfare through bureaucracy  
+    <p>
+      A master of exploiting legal systems and financial structures.
+      Responsible for multiple economic collapses and corporate revivals.
+    </p>
 
-**Profile:** [Full Record](arcturus.md)
+    <ul>
+      <li>Untraceable financial operations</li>
+      <li>Large-scale organizational control</li>
+      <li>Psychological warfare through bureaucracy</li>
+    </ul>
 
----
+    <a href="arcturus.md">Full Record</a>
+  </div>
 
-### Jiroshi Ashikaga  
-**Species:** Human  
-**Occupation:** Co-founder of Wingman and Paladin's • Geologist  
-**Affiliation:** Wingman and Paladin's, Centaria
 
-An elite combatant capable of defeating masters without Nova assistance.
-Wields a rune-enchanted blade and an evolved Nova.
+  <div class="profile-card">
+    <h3>Jiroshi Ashikaga</h3>
 
-**Known For:**  
-- Near-perfect combat discipline  
-- Strategic restraint  
-- Extreme battlefield efficiency  
+    <p><strong>Species:</strong> Human</p>
+    <p><strong>Occupation:</strong> Co-founder · Geologist</p>
+    <p><strong>Affiliation:</strong> Wingman and Paladin's · Centaria</p>
 
-**Profile:** [Full Record](jiroshi.md)
+    <p>
+      An elite combatant capable of defeating masters without Nova assistance.
+      Wields a rune-enchanted blade and an evolved Nova.
+    </p>
 
----
+    <ul>
+      <li>Near-perfect combat discipline</li>
+      <li>Strategic restraint</li>
+      <li>Extreme battlefield efficiency</li>
+    </ul>
 
-### Vonithur Tolvoski  
-**Species:** Detith  
-**Occupation:** Hitman ; Operative  
-**Affiliation:** Contract-based
+    <a href="jiroshi.md">Full Record</a>
+  </div>
 
-Executed one of the most complex long-range assassinations in recorded history.
-Specializes in impossible-angle targeting.
 
-**Known For:**  
-- Orbital precision kills  
-- Zero-miss record  
-- Extreme spatial awareness  
+  <div class="profile-card">
+    <h3>Vonithur Tolvoski</h3>
 
-**Profile:** [Full Record](vonithur.md)
+    <p><strong>Species:</strong> Detith</p>
+    <p><strong>Occupation:</strong> Hitman · Operative</p>
+    <p><strong>Affiliation:</strong> Contract-based</p>
 
----
+    <p>
+      Executed one of the most complex long-range assassinations in history.
+      Specializes in impossible-angle targeting.
+    </p>
 
-### Koneiro Aranushiq  
-**Species:** Talanori  
-**Occupation:** Head of Centaria ; Professional Heist  
-**Affiliation:** Independent / Underground Networks
+    <ul>
+      <li>Orbital precision kills</li>
+      <li>Zero-miss record</li>
+      <li>Extreme spatial awareness</li>
+    </ul>
 
-Architect of the trillion-unit treasury heist.
-Operates through social engineering and logistics manipulation.
+    <a href="vonithur.md">Full Record</a>
+  </div>
 
-**Known For:**  
-- Perfect cover identities  
-- Long-term infiltration  
-- Psychological adaptability  
 
-**Profile:** [Full Record](koneiro.md)
+  <div class="profile-card">
+    <h3>Koneiro Aranushiq</h3>
+
+    <p><strong>Species:</strong> Talanori</p>
+    <p><strong>Occupation:</strong> Head of Centaria · Heist Specialist</p>
+    <p><strong>Affiliation:</strong> Independent Networks</p>
+
+    <p>
+      Architect of the trillion-unit treasury heist.
+      Operates through logistics and social engineering.
+    </p>
+
+    <ul>
+      <li>Perfect cover identities</li>
+      <li>Long-term infiltration</li>
+      <li>Psychological adaptability</li>
+    </ul>
+
+    <a href="koneiro.md">Full Record</a>
+  </div>
+
+</div>
 
 ---
 
 ## Major Organizations
 
----
+<div class="card-grid">
 
-### Centaria  
-**Type:** Wizard Investigation Association  
-**Scope:** Interplanetary  
-**Status:** Active
+  <div class="profile-card">
+    <h3>Centaria</h3>
 
-An elite organization handling high-risk magical and political threats.
+    <p><strong>Type:</strong> Wizard Investigation Association</p>
+    <p><strong>Scope:</strong> Interplanetary</p>
+    <p><strong>Status:</strong> Active</p>
 
-**Specialties:**  
-- Nova deployment  
-- Ether-based investigations  
-- Counter-organizational warfare  
+    <ul>
+      <li>Nova deployment</li>
+      <li>Ether investigations</li>
+      <li>Counter-organizational warfare</li>
+    </ul>
 
-**Profile:** [Full Record](centaria.md)
+    <a href="centaria.md">Full Record</a>
+  </div>
 
----
 
-### Zoriaths  
-**Type:** Criminal-Political Network  
-**Scope:** Multi-Galactic  
-**Status:** Active / Decentralized
+  <div class="profile-card">
+    <h3>Zoriaths</h3>
 
-A distributed organization capable of destabilizing governments and economies.
+    <p><strong>Type:</strong> Criminal-Political Network</p>
+    <p><strong>Scope:</strong> Multi-Galactic</p>
+    <p><strong>Status:</strong> Decentralized</p>
 
-**Specialties:**  
-- Financial warfare  
-- Political manipulation  
-- Proxy conflicts  
+    <ul>
+      <li>Financial warfare</li>
+      <li>Political manipulation</li>
+      <li>Proxy conflicts</li>
+    </ul>
 
-**Profile:** [Full Record](zoriaths.md)
+    <a href="zoriaths.md">Full Record</a>
+  </div>
 
----
-
-## Classified / Restricted Subjects
-
----
-
-### Subject L-17  
-**Classification:** Red  
-**Status:** Unknown  
-**Threat Level:** Extreme
-
-Data partially corrupted.
-Associated with multiple anomalous events.
-
-**Access:** Restricted
-
-**Profile:** [Restricted](classified-l17.md)
+</div>
 
 ---
+
+## Classified Subjects
+
+<div class="card-grid">
+
+  <div class="profile-card classified">
+    <h3>Subject L-17</h3>
+
+    <p><strong>Classification:</strong> Red</p>
+    <p><strong>Status:</strong> Unknown</p>
+    <p><strong>Threat Level:</strong> Extreme</p>
+
+    <p>Data partially corrupted.</p>
+
+    <a href="classified-l17.md">Restricted</a>
+  </div>
+
+</div>
