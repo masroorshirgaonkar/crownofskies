@@ -1,38 +1,59 @@
-/* Base */
+/* Base Reset */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  background: #0f1220;
-  color: #e6e8f0;
-  line-height: 1.7;
   margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #0c0f14;
+  color: #e6e9ef;
+  line-height: 1.6;
 }
 
-/* Page container */
+
+/* Layout */
 
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #222;
+}
+
 
 /* Headings */
 
-h1, h2, h3 {
-  font-weight: 600;
+h1 {
+  font-size: 2.6rem;
+  color: #8fd3ff;
   letter-spacing: 0.5px;
-  color: #ffffff;
 }
 
-h1 {
-  border-bottom: 2px solid #2c2f4a;
-  padding-bottom: 0.5rem;
+h2 {
+  color: #ffd479;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+  margin-top: 3rem;
 }
+
+h3 {
+  color: #9cffc4;
+}
+
 
 /* Links */
 
 a {
-  color: #7aa2ff;
+  color: #6fbaff;
   text-decoration: none;
 }
 
@@ -40,141 +61,106 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Lists */
 
-ul {
-  padding-left: 1.2rem;
-}
-
-/* Sections */
-
-hr {
-  border: none;
-  border-top: 1px solid #2c2f4a;
-  margin: 2rem 0;
-}
-
-/* Profile blocks */
-
-h3 {
-  margin-top: 2rem;
-}
-
-strong {
-  color: #c9d2ff;
-}
-
-/* Blockquotes */
-
-blockquote {
-  border-left: 3px solid #7aa2ff;
-  padding-left: 1rem;
-  color: #b8c0ff;
-  opacity: 0.9;
-}
-
-/* Footer (optional) */
-
-footer {
-  text-align: center;
-  opacity: 0.6;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-}
-
-/* Top Navigation */
-
-.topnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #13162a;
-  border-bottom: 1px solid #2c2f4a;
-}
-
-.nav-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.topnav nav a {
-  margin-left: 1.5rem;
-  font-size: 0.95rem;
-}
-
-/* Page Layout */
-
-.page {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.layout {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 2rem;
-  padding: 2rem 1.5rem;
-}
-
-/* Sidebar */
-
-.sidebar {
-  background: #121528;
-  border: 1px solid #2c2f4a;
-  border-radius: 8px;
-  padding: 1.2rem;
-  height: fit-content;
-}
-
-.sidebar h3 {
-  margin-top: 0;
-  font-size: 1rem;
-  border-bottom: 1px solid #2c2f4a;
-  padding-bottom: 0.5rem;
-}
-
-.sidebar a {
-  display: block;
-  margin: 0.6rem 0;
-  font-size: 0.9rem;
-  color: #b8c0ff;
-}
-
-.sidebar a:hover {
-  color: #ffffff;
-}
-
-/* Profile Cards */
+/* Cards */
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.6rem;
+  margin: 2rem 0;
 }
 
 .profile-card {
-  background: #141833;
-  border: 1px solid #2c2f4a;
+  background: linear-gradient(
+    160deg,
+    #141821,
+    #0e121a
+  );
+
+  border: 1px solid #273041;
+  padding: 1.5rem;
   border-radius: 10px;
-  padding: 1.3rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
 .profile-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
 }
 
-.profile-card h2 {
-  margin-top: 0;
-  font-size: 1.1rem;
+
+/* Card Text */
+
+.profile-card p {
+  margin: 0.4rem 0;
+  color: #cfd6e2;
 }
+
+.profile-card ul {
+  padding-left: 1.2rem;
+  color: #b8c0cf;
+}
+
+.profile-card li {
+  margin: 0.3rem 0;
+}
+
+
+/* Accent Labels */
+
+.profile-card strong {
+  color: #ffd479;
+  font-weight: 600;
+}
+
+
+/* Buttons / Links in Cards */
 
 .profile-card a {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
+  padding: 0.35rem 0.7rem;
+
+  border: 1px solid #3a5a88;
+  border-radius: 6px;
+
   font-size: 0.9rem;
+
+  background: rgba(80,120,200,0.08);
+}
+
+.profile-card a:hover {
+  background: rgba(80,120,200,0.18);
+}
+
+
+/* Classified */
+
+.profile-card.classified {
+  border-color: #7a1a1a;
+  background: linear-gradient(
+    160deg,
+    #1a0707,
+    #120404
+  );
+}
+
+.profile-card.classified h3 {
+  color: #ff6b6b;
+}
+
+
+/* Code / Terminal Feel */
+
+code, pre {
+  font-family: "JetBrains Mono", monospace;
+  background: #0a0d12;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #9cecff;
 }
