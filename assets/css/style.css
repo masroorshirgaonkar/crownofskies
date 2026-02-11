@@ -187,142 +187,80 @@ h3 {
 ========================= */
 
 /* =========================
-   Links (Cleaned Up)
+   Links as Subtle Buttons
 ========================= */
 
-/* Default links in text */
+/* Default content links */
 
 main a {
-  color: #9fc4ff;
+  display: inline-block;
+
+  padding: 0.12rem 0.4rem;
+
+  border-radius: 4px;
+
+  color: #b8cbff;
+
   text-decoration: none;
 
-  border-bottom: 1px solid rgba(120,170,255,0.25);
+  border: 1px solid transparent;
 
-  transition: color 0.2s ease,
-              border-color 0.2s ease;
+  background: transparent;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
 }
+
 
 main a:hover {
   color: #ffffff;
-  border-bottom-color: rgba(120,170,255,0.8);
+
+  background: rgba(120,170,255,0.08);
+
+  border-color: rgba(120,170,255,0.35);
+
+  box-shadow: 0 0 0 1px rgba(120,170,255,0.15);
 }
 
 
-/* Navigation links */
+/* Navigation & Sidebar (no button look) */
 
 .topnav a,
 .sidebar a {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+
   border: none;
+  background: transparent;
 }
 
 
-/* Card links (buttons) */
+.topnav a:hover,
+.sidebar a:hover {
+  background: rgba(120,170,255,0.12);
+}
+
+
+/* Card Buttons (keep stronger style) */
 
 .profile-card a {
-  border-bottom: none;
-}
-
-
-/* =========================
-   Profile Cards
-========================= */
-
-.card-grid {
-  display: grid;
-
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(280px, 1fr)
-  );
-
-  gap: 1.6rem;
-
-  margin: 2rem 0;
-}
-
-
-.profile-card {
-  background: linear-gradient(
-    160deg,
-    #141821,
-    #0e121a
-  );
-
-  border: 1px solid #273041;
-
-  padding: 1.5rem;
-  border-radius: 10px;
-
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
-}
-
-
-.profile-card:hover {
-  transform: translateY(-6px) scale(1.01);
-
-  box-shadow: 0 16px 40px rgba(0,0,0,0.7);
-
-  border-color: #4a6fb0;
-}
-
-
-/* Card Text */
-
-.profile-card p {
-  margin: 0.4rem 0;
-  color: #cfd6e2;
-}
-
-.profile-card ul {
-  padding-left: 1.2rem;
-  color: #b8c0cf;
-}
-
-.profile-card li {
-  margin: 0.3rem 0;
-}
-
-
-/* Accent Labels */
-
-.profile-card strong {
-  color: #ffd479;
-
-  font-weight: 600;
-
-  font-family: "JetBrains Mono", monospace;
-  letter-spacing: 0.3px;
-}
-
-
-/* Card Buttons / Links */
-
-.profile-card a {
-  display: inline-block;
-
-  margin-top: 1rem;
   padding: 0.35rem 0.7rem;
 
-  border: 1px solid #3a5a88;
   border-radius: 6px;
 
-  font-size: 0.9rem;
+  border: 1px solid #3a5a88;
 
   background: rgba(80,120,200,0.08);
-
-  transition: background 0.2s ease,
-              border-color 0.2s ease;
 }
 
 .profile-card a:hover {
   background: rgba(80,120,200,0.18);
   border-color: #6b90ff;
 }
+
 
 
 /* =========================
