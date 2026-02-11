@@ -261,6 +261,69 @@ main a:hover {
   border-color: #6b90ff;
 }
 
+/* =========================
+   Profile Cards (RESTORED)
+========================= */
+
+.card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+
+  gap: 1.6rem;
+
+  margin: 2rem 0;
+}
+
+
+.profile-card {
+  background: linear-gradient(
+    160deg,
+    #141821,
+    #0e121a
+  );
+
+  border: 1px solid #273041;
+
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.profile-card:hover {
+  transform: translateY(-6px) scale(1.01);
+
+  box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+
+  border-color: #4a6fb0;
+}
+
+
+/* Card Text */
+
+.profile-card p {
+  margin: 0.4rem 0;
+  color: #cfd6e2;
+}
+
+.profile-card ul {
+  padding-left: 1.2rem;
+  color: #b8c0cf;
+}
+
+.profile-card li {
+  margin: 0.3rem 0;
+}
 
 
 /* =========================
