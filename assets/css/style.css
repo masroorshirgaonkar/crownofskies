@@ -186,13 +186,40 @@ h3 {
    Links
 ========================= */
 
-a {
-  color: #6fbaff;
+/* =========================
+   Links (Cleaned Up)
+========================= */
+
+/* Default links in text */
+
+main a {
+  color: #9fc4ff;
   text-decoration: none;
+
+  border-bottom: 1px solid rgba(120,170,255,0.25);
+
+  transition: color 0.2s ease,
+              border-color 0.2s ease;
 }
 
-a:hover {
-  text-decoration: underline;
+main a:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(120,170,255,0.8);
+}
+
+
+/* Navigation links */
+
+.topnav a,
+.sidebar a {
+  border: none;
+}
+
+
+/* Card links (buttons) */
+
+.profile-card a {
+  border-bottom: none;
 }
 
 
