@@ -11,9 +11,41 @@
 
 <body>
 
-<main>
-  {{ content }}
-</main>
+<header class="topnav">
+  <div class="nav-title">Crown of Skies</div>
+
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/lore/' | relative_url }}">Lore</a>
+    <a href="{{ '/profiles/' | relative_url }}">Profiles</a>
+    <a href="{{ '/magic/' | relative_url }}">Magic & Tech</a>
+    <a href="{{ '/news/' | relative_url }}">News</a>
+    <a href="{{ '/files/' | relative_url }}">Files</a>
+  </nav>
+</header>
+
+<div class="page">
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <h3>Archive</h3>
+
+      <a href="{{ '/regions/' | relative_url }}">Regions</a>
+      <a href="{{ '/lore/' | relative_url }}">Lore</a>
+      <a href="{{ '/profiles/' | relative_url }}">Profiles</a>
+      <a href="{{ '/magic/' | relative_url }}">Magic & Tech</a>
+      <a href="{{ '/news/' | relative_url }}">News</a>
+      <a href="{{ '/files/' | relative_url }}">Files</a>
+    </aside>
+
+    <main>
+      {{ content }}
+    </main>
+
+  </div>
+
+</div>
 
 <footer>
   Crown of Skies Archive · Unauthorized Reality Database
