@@ -9,7 +9,13 @@ title: Crown of Skies
 
 Welcome to the official repository of records, systems, histories, and recovered materials from across known space.
 
-This site documents the civilizations, conflicts, technologies, and metaphysical structures of the Crown of Skies universe.
+Crown of Skies is a long-form science-fantasy universe built around fragmented power, evolving systems, and shifting perspectives. This site is not arranged like a traditional novel. It is an archive of stories, documents, reports, experiments, and analyses that together form a living world. 
+
+Some entries focus on characters and events. Others explain technology, magic, or political structures. Some are written from inside the universe, while others break it down from the outside. 
+
+> Unity is temporary. Fragmentation is permanent. 
+
+Every page here is part of the same universe, and every piece matters.
 
 ---
 
@@ -23,11 +29,11 @@ New here? Start with these.
 - **Known Regions**  
   [Explore Space Maps](/crownofskies/regions/)
 
-- **Nova & Spirit Systems**  
-  [Understand the Core Mechanics](/crownofskies/magic-tech/)
+- **Magic Systems**  
+  [The Core Mechanics](/crownofskies/magic-tech/)
 
-- **Main Figures**  
-  [Meet the Cast](/crownofskies/profiles/)
+- **Character Profiles**  
+  [Character logs](/crownofskies/profiles/)
 
 ---
 
@@ -36,35 +42,35 @@ New here? Start with these.
 ### Lore
 History, cultures, politics, timelines, and cosmology.
 
-→ [Enter Lore Archive](/crownofskies/lore/)
+[Enter Lore Archive](/crownofskies/lore/)
 
 ---
 
 ### Files
 Recovered documents, reports, manuals, and classified records.
 
-→ [Open File Vault](/crownofskies/files/)
+[Open File Vault](/crownofskies/files/)
 
 ---
 
 ### Magic & Technology
 Novas, Etherdynamics, weapons, gadgets and infrastructure.
 
-→ [Access Systems Database](/crownofskies/magic-tech/)
+[Access Systems Database](/crownofskies/magic-tech/)
 
 ---
 
 ### News
 In-universe reports, incidents, leaks, and major events.
 
-→ [Read News Feed](/crownofskies/news/)
+[Read News Feed](/crownofskies/news/)
 
 ---
 
 ### Profiles
 Characters, factions, organizations and empires.
 
-→ [Browse Profiles](/crownofskies/profiles/)
+[Browse Profiles](/crownofskies/profiles/)
 
 ---
 
