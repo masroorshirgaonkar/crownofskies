@@ -4,7 +4,6 @@ title: The Rise of Broken Novas
 date: 2026-02-12
 tag: lore
 image: /assets/images/news/broken-novas.jpg
-reading_time: 6
 ---
 
 A comprehensive analysis of stability collapse, parasitic Nova behavior,
