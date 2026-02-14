@@ -151,13 +151,11 @@ body {
    Meta Info
 ================================ */
 
-.meta {
+.meta-info {
   display: flex;
   justify-content: space-between;
-
   font-size: 0.8rem;
   color: #8d93a1;
-
   margin: 0.7rem 0;
 }
 
