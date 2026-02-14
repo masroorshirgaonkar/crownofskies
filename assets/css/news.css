@@ -1,0 +1,292 @@
+/* ===============================
+   Reset & Base
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e1117; /* Deep neutral dark */
+  color: #e6e8eb;
+
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+}
+
+
+/* ===============================
+   Header
+================================ */
+
+.news-header {
+  text-align: center;
+  padding: 4rem 1rem 2.5rem;
+
+  border-bottom: 1px solid #1c1f26;
+}
+
+.news-header h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #f2f4f8;
+}
+
+.news-header p {
+  margin-top: 0.6rem;
+  color: #aab0bb;
+}
+
+.last-update {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #7e8593;
+}
+
+
+/* ===============================
+   Featured Article
+================================ */
+
+.featured {
+  max-width: 1100px;
+  margin: 3rem auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+
+  background: #151922;
+  border-radius: 14px;
+  overflow: hidden;
+
+  box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+}
+
+.featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.featured-content {
+  padding: 2.2rem;
+}
+
+.featured h2 {
+  margin: 0.8rem 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #f5f7fb;
+}
+
+.featured p {
+  color: #c7cbd4;
+  margin-bottom: 1.2rem;
+}
+
+
+/* ===============================
+   Feed Layout
+================================ */
+
+.news-feed {
+  max-width: 1100px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+
+/* ===============================
+   Cards
+================================ */
+
+.news-card {
+  background: #141821;
+
+  padding: 1.6rem;
+  border-radius: 12px;
+
+  border: 1px solid #1f2430;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #2a3140;
+
+  box-shadow: 0 8px 22px rgba(0,0,0,0.4);
+}
+
+.news-card h3 {
+  margin: 0.7rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f1f3f7;
+}
+
+.news-card p {
+  font-size: 0.95rem;
+  color: #b8bcc6;
+  flex-grow: 1;
+}
+
+
+/* ===============================
+   Meta Info
+================================ */
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.8rem;
+  color: #8d93a1;
+
+  margin: 0.7rem 0;
+}
+
+
+/* ===============================
+   Tags
+================================ */
+
+.tag {
+  display: inline-block;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.6px;
+
+  padding: 4px 10px;
+  border-radius: 999px;
+
+  font-weight: 500;
+
+  background: #1e2330;
+  color: #cfd3dc;
+}
+
+/* Soft variations */
+
+.lore {
+  background: #202734;
+}
+
+.update {
+  background: #1f2a28;
+}
+
+.story {
+  background: #2a261f;
+}
+
+.meta {
+  background: #262033;
+}
+
+
+/* ===============================
+   Links & Buttons
+================================ */
+
+a {
+  color: #9db4ff;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #c7d3ff;
+}
+
+.read-btn {
+  display: inline-block;
+
+  margin-top: 1.1rem;
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  background: #1b2030;
+  border: 1px solid #2a3142;
+
+  color: #cdd6ff;
+
+  transition: all 0.25s ease;
+}
+
+.read-btn:hover {
+  background: #242a3d;
+  border-color: #3a4260;
+}
+
+
+/* ===============================
+   Footer
+================================ */
+
+.news-footer {
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+
+  padding: 2.5rem 1rem 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #1c1f26;
+}
+
+.news-footer h4 {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e6e9f0;
+}
+
+.news-footer a {
+  display: block;
+  margin: 0.35rem 0;
+
+  color: #aab1c2;
+  font-size: 0.9rem;
+}
+
+.news-footer a:hover {
+  color: #d5dcff;
+}
+
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 800px) {
+
+  .featured {
+    grid-template-columns: 1fr;
+  }
+
+  .news-footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+}
