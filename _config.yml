@@ -6,3 +6,8 @@ baseurl: "/crownofskies"
 url: "https://masroorshirgaonkar.github.io"
 
 markdown: kramdown
+
+collections:
+  news:
+    output: true
+    permalink: /news/:year/:slug/
