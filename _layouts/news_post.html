@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ page.title }} | Crown of Skies</title>
+
+  <!-- News CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/news.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!-- ================= Header ================= -->
+
+  <header class="news-header">
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.tag %}
+    <span class="tag {{ page.tag }}">
+      {{ page.tag | upcase }}
+    </span>
+    {% endif %}
+
+    <div class="post-meta">
+
+      <span>
+        {{ page.date | date: "%B %d, %Y" }}
+      </span>
+
+      {% assign words = content | number_of_words %}
+      {% assign minutes = words | divided_by: 200 | plus: 1 %}
+
+      <span>
+        {{ minutes }} min read
+      </span>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= Hero Image ================= -->
+
+  {% if page.image %}
+
+  <section class="post-hero">
+
+    <img
+      src="{{ site.baseurl }}{{ page.image }}"
+      alt="{{ page.title }}">
+
+  </section>
+
+  {% endif %}
+
+
+  <!-- ================= Article Body ================= -->
+
+  <main class="post-content">
+
+    {{ content }}
+
+  </main>
+
+
+  <!-- ================= Back Link ================= -->
+
+  <div class="post-back">
+
+    <a href="{{ site.baseurl }}/news/">
+      ← Back to Chronicle Feed
+    </a>
+
+  </div>
+
+
+</body>
+</html>
