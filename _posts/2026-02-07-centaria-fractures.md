@@ -1,8 +1,8 @@
 ---
 layout: news_post
-title: The Rise of Broken Novas
+title: Centaria fractures
 date: 2026-02-07
-tag: lore
+tag: story
 image: /assets/images/news/centaria.jpg
 featured: true
 ---
