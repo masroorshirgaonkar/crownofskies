@@ -1,3 +1,15 @@
+body {
+  background:
+    linear-gradient(
+      rgba(14,17,23,0.9),
+      rgba(14,17,23,0.9)
+    );
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .page-news {
   background:
     linear-gradient(rgba(12,14,19,0.9), rgba(12,14,19,0.95)),
