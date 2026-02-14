@@ -19,24 +19,40 @@
 
   <header class="news-header">
     <h1>{{ page.title }}</h1>
-    <p>Updates from the Infinite Regions</p>
+
+    {% if page.description %}
+      <p>{{ page.description }}</p>
+    {% else %}
+      <p>Updates from the Infinite Regions</p>
+    {% endif %}
+
     <span class="last-update">
       Last Update: {{ site.time | date: "%B %Y" }}
     </span>
   </header>
 
 
+  <!-- ================= Page Intro ================= -->
+
+  {% if content %}
+  <section class="news-intro">
+    {{ content }}
+  </section>
+  {% endif %}
+
+
   <!-- ================= Featured Article ================= -->
 
-  {% assign featured = site.posts | where: "featured", true | first %}
+  {% assign featured = site.posts | where: "featured", true | sort: "date" | reverse | first %}
 
   {% if featured %}
 
   <section class="featured">
 
     {% if featured.image %}
-      <img src="{{ site.baseurl }}{{ featured.image }}"
-           alt="{{ featured.title }}">
+      <img
+        src="{{ site.baseurl }}{{ featured.image }}"
+        alt="{{ featured.title }}">
     {% endif %}
 
     <div class="featured-content">
@@ -54,19 +70,26 @@
       </p>
 
       <div class="meta-info">
+
         <span>
           {{ featured.date | date: "%b %d, %Y" }}
         </span>
 
+        {% assign words = featured.content | number_of_words %}
+        {% assign minutes = words | divided_by: 200 | plus: 1 %}
+
         <span>
-          {{ featured.content | number_of_words | divided_by: 200 | plus: 1 }}
-          min read
+          {{ minutes }} min read
         </span>
+
       </div>
 
-      <a href="{{ site.baseurl }}{{ featured.url }}"
-         class="read-btn">
+      <a
+        href="{{ site.baseurl }}{{ featured.url }}"
+        class="read-btn">
+
         Read Article →
+
       </a>
 
     </div>
@@ -80,44 +103,60 @@
 
   <main class="news-feed">
 
-    {% for post in site.posts limit: 9 %}
+    {% assign sorted_posts = site.posts | sort: "date" | reverse %}
 
-    <article class="news-card">
+    {% for post in sorted_posts %}
 
-      {% if post.image %}
-        <img class="card-thumb"
-             src="{{ site.baseurl }}{{ post.image }}"
-             alt="{{ post.title }}">
-      {% endif %}
+      {% if post.url != featured.url %}
 
-      {% if post.tag %}
-      <span class="tag {{ post.tag }}">
-        {{ post.tag | upcase }}
-      </span>
-      {% endif %}
+      <article class="news-card">
 
-      <h3>{{ post.title }}</h3>
+        {% if post.image %}
+          <img
+            class="card-thumb"
+            src="{{ site.baseurl }}{{ post.image }}"
+            alt="{{ post.title }}">
+        {% endif %}
 
-      <p>
-        {{ post.excerpt | strip_html | truncate: 120 }}
-      </p>
 
-      <div class="meta-info">
-        <span>
-          {{ post.date | date: "%b %d, %Y" }}
+        {% if post.tag %}
+        <span class="tag {{ post.tag }}">
+          {{ post.tag | upcase }}
         </span>
+        {% endif %}
 
-        <span>
-          {{ post.content | number_of_words | divided_by: 200 | plus: 1 }}
-          min read
-        </span>
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        Read →
-      </a>
+        <h3>{{ post.title }}</h3>
 
-    </article>
+
+        <p>
+          {{ post.excerpt | strip_html | truncate: 120 }}
+        </p>
+
+
+        <div class="meta-info">
+
+          <span>
+            {{ post.date | date: "%b %d, %Y" }}
+          </span>
+
+          {% assign words = post.content | number_of_words %}
+          {% assign minutes = words | divided_by: 200 | plus: 1 %}
+
+          <span>
+            {{ minutes }} min read
+          </span>
+
+        </div>
+
+
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          Read →
+        </a>
+
+      </article>
+
+      {% endif %}
 
     {% endfor %}
 
@@ -138,6 +177,7 @@
       <a href="{{ site.baseurl }}/news/tags/meta">Meta</a>
 
     </div>
+
 
     <div class="archive">
 
