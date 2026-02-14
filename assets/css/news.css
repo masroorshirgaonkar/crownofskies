@@ -300,3 +300,9 @@ a:hover {
 
   filter: brightness(0.9);
 }
+
+.news-post-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
