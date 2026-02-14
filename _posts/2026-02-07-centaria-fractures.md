@@ -1,6 +1,6 @@
 ---
 layout: news_post
-title: Centaria: Internal Fractures
+title: The Rise of Broken Novas
 date: 2026-02-07
 tag: story
 image: /assets/images/news/centaria.jpg
