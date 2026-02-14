@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: default
+---
 
-  <title>{{ page.title }} | Crown of Skies</title>
-
-  <!-- News CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/news.css">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
+<div class="news-post-wrapper">
 
 
   <!-- ================= Header ================= -->
@@ -46,7 +35,7 @@
   </header>
 
 
-  <!-- ================= Hero Image ================= -->
+  <!-- ================= Hero ================= -->
 
   {% if page.image %}
 
@@ -61,7 +50,7 @@
   {% endif %}
 
 
-  <!-- ================= Article Body ================= -->
+  <!-- ================= Content ================= -->
 
   <main class="post-content">
 
@@ -70,7 +59,7 @@
   </main>
 
 
-  <!-- ================= Back Link ================= -->
+  <!-- ================= Back ================= -->
 
   <div class="post-back">
 
@@ -80,6 +69,4 @@
 
   </div>
 
-
-</body>
-</html>
+</div>
