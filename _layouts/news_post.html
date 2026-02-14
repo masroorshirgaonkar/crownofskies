@@ -2,70 +2,50 @@
 layout: default
 ---
 
-<article class="news-article">
+<link rel="stylesheet" href="{{ '/assets/css/news.css' | relative_url }}">
+
+<div class="news-post-wrapper">
+
+  <article class="news-article">
+
+    <!-- Header -->
+    <header class="article-header">
+
+      <h1>{{ page.title }}</h1>
+
+      <div class="article-meta">
+        <span>{{ page.date | date: "%B %d, %Y" }}</span>
+
+        {% if page.tags %}
+          •
+          {% for tag in page.tags %}
+            <span class="tag {{ tag }}">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+    </header>
 
 
-<!-- ================= Header ================= -->
-
-<header class="article-header">
-
-  <h1>{{ page.title }}</h1>
-
-  <div class="article-meta">
-
-    {% if page.tag %}
-    <span class="tag {{ page.tag }}">
-      {{ page.tag | upcase }}
-    </span>
+    <!-- Hero Image -->
+    {% if page.image %}
+    <div class="article-hero">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
     {% endif %}
 
-    <span>
-      {{ page.date | date: "%B %d, %Y" }}
-    </span>
 
-    {% assign words = content | number_of_words %}
-    {% assign minutes = words | divided_by: 200 | plus: 1 %}
-
-    <span>{{ minutes }} min read</span>
-
-  </div>
-
-</header>
+    <!-- Body -->
+    <div class="article-body">
+      {{ content }}
+    </div>
 
 
-<!-- ================= Hero ================= -->
+    <!-- Footer -->
+    <footer class="article-footer">
+      <a href="{{ '/news/' | relative_url }}">← Back to News</a>
+    </footer>
 
-{% if page.image %}
-
-<section class="article-hero">
-
-  <img
-    src="{{ site.baseurl }}{{ page.image }}"
-    alt="{{ page.title }}">
-
-</section>
-
-{% endif %}
-
-
-<!-- ================= Body ================= -->
-
-<div class="article-body">
-
-  {{ content }}
+  </article>
 
 </div>
-
-
-<!-- ================= Footer ================= -->
-
-<div class="article-footer">
-
-  <a href="{{ site.baseurl }}/news/">
-    ← Back to Chronicle Feed
-  </a>
-
-</div>
-
-
-</article>
