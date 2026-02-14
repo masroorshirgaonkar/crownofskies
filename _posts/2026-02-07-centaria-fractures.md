@@ -2,7 +2,7 @@
 layout: news_post
 title: The Rise of Broken Novas
 date: 2026-02-07
-tag: story
+tag: lore
 image: /assets/images/news/centaria.jpg
 featured: true
 ---
