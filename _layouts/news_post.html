@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<div class="news-post-wrapper">
+<article class="news-article">
 
 
-  <!-- ================= Header ================= -->
+<!-- ================= Header ================= -->
 
-  <header class="news-header">
+<header class="article-header">
 
-    <h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>
+
+  <div class="article-meta">
 
     {% if page.tag %}
     <span class="tag {{ page.tag }}">
@@ -17,56 +19,53 @@ layout: default
     </span>
     {% endif %}
 
-    <div class="post-meta">
+    <span>
+      {{ page.date | date: "%B %d, %Y" }}
+    </span>
 
-      <span>
-        {{ page.date | date: "%B %d, %Y" }}
-      </span>
+    {% assign words = content | number_of_words %}
+    {% assign minutes = words | divided_by: 200 | plus: 1 %}
 
-      {% assign words = content | number_of_words %}
-      {% assign minutes = words | divided_by: 200 | plus: 1 %}
-
-      <span>
-        {{ minutes }} min read
-      </span>
-
-    </div>
-
-  </header>
-
-
-  <!-- ================= Hero ================= -->
-
-  {% if page.image %}
-
-  <section class="post-hero">
-
-    <img
-      src="{{ site.baseurl }}{{ page.image }}"
-      alt="{{ page.title }}">
-
-  </section>
-
-  {% endif %}
-
-
-  <!-- ================= Content ================= -->
-
-  <main class="post-content">
-
-    {{ content }}
-
-  </main>
-
-
-  <!-- ================= Back ================= -->
-
-  <div class="post-back">
-
-    <a href="{{ site.baseurl }}/news/">
-      ← Back to Chronicle Feed
-    </a>
+    <span>{{ minutes }} min read</span>
 
   </div>
 
+</header>
+
+
+<!-- ================= Hero ================= -->
+
+{% if page.image %}
+
+<section class="article-hero">
+
+  <img
+    src="{{ site.baseurl }}{{ page.image }}"
+    alt="{{ page.title }}">
+
+</section>
+
+{% endif %}
+
+
+<!-- ================= Body ================= -->
+
+<div class="article-body">
+
+  {{ content }}
+
 </div>
+
+
+<!-- ================= Footer ================= -->
+
+<div class="article-footer">
+
+  <a href="{{ site.baseurl }}/news/">
+    ← Back to Chronicle Feed
+  </a>
+
+</div>
+
+
+</article>
