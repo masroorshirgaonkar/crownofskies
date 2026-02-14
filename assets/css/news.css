@@ -288,3 +288,15 @@ a:hover {
   }
 
 }
+
+.card-thumb {
+  width: 100%;
+  height: 150px;
+
+  object-fit: cover;
+  border-radius: 8px;
+
+  margin-bottom: 0.8rem;
+
+  filter: brightness(0.9);
+}
