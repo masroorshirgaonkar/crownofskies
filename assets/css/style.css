@@ -1,6 +1,77 @@
-/* =========================
-   Base Reset
-========================= */
+body {
+  background:
+    linear-gradient(
+      rgba(14,17,23,0.9),
+      rgba(14,17,23,0.9)
+    );
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Home */
+
+.page-home {
+  background:
+    linear-gradient(rgba(14,17,23,0.88), rgba(14,17,23,0.92)),
+    url("/assets/images/bg-home.jpg");
+}
+
+
+/* Lore */
+
+.page-lore {
+  background:
+    linear-gradient(rgba(16,18,25,0.9), rgba(16,18,25,0.9)),
+    url("/assets/images/bg-lore.jpg");
+}
+
+
+/* Profiles */
+
+.page-profiles {
+  background:
+    linear-gradient(rgba(13,16,22,0.9), rgba(13,16,22,0.95)),
+    url("/assets/images/bg-profiles.jpg");
+}
+
+
+/* Magic */
+
+.page-magic {
+  background:
+    linear-gradient(rgba(14,17,23,0.87), rgba(14,17,23,0.9)),
+    url("/assets/images/bg-magic.jpg");
+}
+
+
+/* Technology */
+
+.page-tech {
+  background:
+    linear-gradient(rgba(10,13,18,0.9), rgba(10,13,18,0.95)),
+    url("/assets/images/bg-tech.jpg");
+}
+
+
+/* News */
+
+.page-news {
+  background:
+    linear-gradient(rgba(12,14,19,0.9), rgba(12,14,19,0.95)),
+    url("/assets/images/bg-news.jpg");
+}
+
+
+/* Files */
+
+.page-files {
+  background:
+    linear-gradient(rgba(8,10,15,0.95), rgba(8,10,15,0.95)),
+    url("/assets/images/bg-files.jpg");
+}
+
 
 * {
   box-sizing: border-box;
