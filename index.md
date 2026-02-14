@@ -30,7 +30,7 @@ New here? Start with these.
   [Explore Space Maps](/crownofskies/regions/)
 
 - **Magic Systems**  
-  [The Core Mechanics](/crownofskies/magic-tech/)
+  [The Core Mechanics](/crownofskies/magic/)
 
 - **Character Profiles**  
   [Character logs](/crownofskies/profiles/)
@@ -53,12 +53,17 @@ Recovered documents, reports, manuals, and classified records.
 
 ---
 
-### Magic & Technology
-Novas, Etherdynamics, weapons, gadgets and infrastructure.
+### Magic
+Novas, Etherdynamics, orthodox systems.
 
-[Access Systems Database](/crownofskies/magic-tech/)
+[Access Systems Database](/crownofskies/magic/)
 
 ---
+
+### Technologies
+Weapons, gadgets, spaceships and infrastructure.
+
+[See marvels of innovations](/crownofskies/tech/)
 
 ### News
 In-universe reports, incidents, leaks, and major events.
