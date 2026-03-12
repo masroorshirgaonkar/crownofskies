@@ -5,7 +5,6 @@ title: Crown of Skies
 
 # Crown of Skies
 
-This is an audit...
 *A living archive of an infinite universe.*
 
 Welcome to the official repository of records, systems, histories, and recovered materials from across known space.
