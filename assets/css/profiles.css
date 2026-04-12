@@ -1,0 +1,375 @@
+/* ============================================================
+   Profile Database — Master / Detail
+   Place this file at: assets/css/profiles.css
+   Then add to your _layouts/default.html or profiles page:
+     <link rel="stylesheet" href="/crownofskies/assets/css/profiles.css">
+   Or @import it from your main stylesheet.
+   ============================================================ */
+
+/* ── Outer wrapper ── */
+.profiles-db {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  font-family: inherit;
+}
+
+/* ── Page header ── */
+.pdb-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 6px;
+}
+
+.pdb-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: inherit;
+}
+
+.pdb-sub {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 2rem;
+}
+
+/* ── Shell: master + detail side by side ── */
+.pdb-shell {
+  display: flex;
+  gap: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 540px;
+}
+
+/* ── Master list (left column) ── */
+.pdb-master {
+  width: 240px;
+  flex-shrink: 0;
+  border-right: 1px solid #e0e0e0;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+.pdb-search-wrap {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pdb-search {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  color: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pdb-search:focus {
+  border-color: #aaa;
+}
+
+.pdb-group {
+  padding: 12px 0 4px;
+}
+
+.pdb-group-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  padding: 0 14px 6px;
+  margin: 0;
+}
+
+.pdb-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px 14px;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s;
+  gap: 1px;
+}
+
+.pdb-item:hover {
+  background: #f0f0f0;
+}
+
+.pdb-item.active {
+  background: #fff;
+  border-left-color: #555;
+}
+
+.pdb-item-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.3;
+}
+
+.pdb-item-meta {
+  font-size: 11px;
+  color: #999;
+}
+
+.pdb-item--classified .pdb-item-name {
+  color: #a32d2d;
+}
+
+.pdb-item--classified .pdb-item-meta {
+  color: #c97070;
+}
+
+.pdb-item.hidden {
+  display: none;
+}
+
+/* ── Detail panel (right column) ── */
+.pdb-detail {
+  flex: 1;
+  background: #fff;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Individual profile — hidden by default, shown when active */
+.pdb-profile {
+  display: none;
+  flex-direction: column;
+}
+
+.pdb-profile.active {
+  display: flex;
+}
+
+/* ── Photo ── */
+.pdb-photo-wrap {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #f2f2f2;
+  flex-shrink: 0;
+}
+
+.pdb-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.pdb-photo-wrap--classified {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+}
+
+.pdb-photo-redacted {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #555;
+  text-transform: uppercase;
+}
+
+/* ── Info section ── */
+.pdb-info {
+  padding: 1.5rem 1.75rem 2rem;
+}
+
+.pdb-info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.pdb-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: inherit;
+}
+
+.pdb-role {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 1rem;
+}
+
+/* ── Species / type badge ── */
+.pdb-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.pdb-badge--talanori { background: #eeedfe; color: #3c3489; }
+.pdb-badge--human    { background: #e1f5ee; color: #085041; }
+.pdb-badge--detith   { background: #faece7; color: #712b13; }
+.pdb-badge--org      { background: #e6f1fb; color: #0c447c; }
+.pdb-badge--classified { background: #fcebeb; color: #791f1f; }
+
+/* ── Metadata table ── */
+.pdb-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+
+.pdb-table tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pdb-table tr:last-child {
+  border-bottom: none;
+}
+
+.pdb-table td {
+  padding: 6px 0;
+  vertical-align: top;
+  color: #333;
+}
+
+.pdb-table-key {
+  color: #aaa;
+  width: 110px;
+  font-size: 12px;
+}
+
+/* ── Description ── */
+.pdb-desc {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #555;
+  margin: 0 0 1rem;
+}
+
+/* ── Capability tags ── */
+.pdb-caps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.pdb-cap {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid #e0e0e0;
+  color: #666;
+}
+
+.pdb-cap--redacted {
+  border-color: #f09595;
+  color: #a32d2d;
+  letter-spacing: 0.06em;
+}
+
+/* ── Full record link ── */
+.pdb-link {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.pdb-link:hover {
+  color: #000;
+  border-color: #666;
+}
+
+.pdb-link--restricted {
+  color: #a32d2d;
+  border-bottom-color: #f09595;
+  cursor: not-allowed;
+}
+
+/* ── Classified styling ── */
+.pdb-danger { color: #a32d2d; }
+
+.pdb-redact-line {
+  color: transparent;
+  background: #222;
+  border-radius: 2px;
+  user-select: none;
+  display: inline-block;
+}
+
+.pdb-bar {
+  display: inline-block;
+  width: 70px;
+  height: 11px;
+  background: #333;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+
+/* ── Responsive: stack on small screens ── */
+@media (max-width: 640px) {
+  .pdb-shell {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  .pdb-master {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    max-height: 260px;
+  }
+
+  .pdb-photo-wrap {
+    height: 200px;
+  }
+}
+
+/* ── Dark mode ── */
+@media (prefers-color-scheme: dark) {
+  .pdb-shell      { border-color: #333; }
+  .pdb-master     { background: #111; border-right-color: #333; }
+  .pdb-search     { background: #1a1a1a; border-color: #333; color: #ddd; }
+  .pdb-search:focus { border-color: #666; }
+  .pdb-item:hover { background: #1e1e1e; }
+  .pdb-item.active { background: #222; border-left-color: #aaa; }
+  .pdb-item-name  { color: #ddd; }
+  .pdb-detail     { background: #161616; }
+  .pdb-photo-wrap { background: #1a1a1a; }
+  .pdb-table td   { color: #ccc; }
+  .pdb-table tr   { border-bottom-color: #2a2a2a; }
+  .pdb-table-key  { color: #666; }
+  .pdb-desc       { color: #999; }
+  .pdb-cap        { border-color: #333; color: #888; }
+  .pdb-link       { color: #bbb; border-color: #555; }
+  .pdb-link:hover { color: #fff; border-color: #aaa; }
+  .pdb-eyebrow    { color: #666; }
+  .pdb-sub        { color: #666; }
+  .pdb-group-label { color: #555; }
+  .pdb-bar        { background: #ccc; }
+  .pdb-redact-line { background: #ddd; }
+}
