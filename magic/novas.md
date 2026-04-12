@@ -1,3 +1,8 @@
+---
+layout: default
+title: Crown of Skies
+---
+
 ### Nova
 A Nova is a physical shape of an Ether body or Ether mechanism. It mostly is called as "Magic Engine" or "Soul". It can be any entity which has a physical presence but can shift to Ether dimensions. Most of the time when people say "Nova", they mean the Novas which are attached to a concious body's spirit, called Hosted Nova. 
 
