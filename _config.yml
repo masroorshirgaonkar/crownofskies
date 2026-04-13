@@ -1,19 +1,12 @@
 title: Crown of Skies
 description: A transmedia worldbuilding project
-theme: null
-
 baseurl: "/crownofskies"
 url: "https://masroorshirgaonkar.github.io"
-
 markdown: kramdown
-
 collections:
   news:
     output: true
     permalink: /news/:year/:slug/
-
-defaults:
-  - scope:
-      path: "_layouts"
-    values:
-      layout: null
+plugins:
+  - jekyll-relative-links
+  - jekyll-paginate
