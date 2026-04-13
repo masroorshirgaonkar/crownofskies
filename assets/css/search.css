@@ -1,0 +1,253 @@
+/* ============================================================
+   Crown of Skies — Search Page Styles
+   Add to: assets/css/search.css  (or paste into your main CSS)
+   Fonts used: Cinzel, Crimson Pro, Space Mono (add to <head>)
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&family=Space+Mono&display=swap" rel="stylesheet">
+   ============================================================ */
+
+:root {
+  --cos-bg:           #0a0c10;
+  --cos-surface:      #111318;
+  --cos-surface2:     #181c23;
+  --cos-border:       rgba(100, 130, 180, 0.15);
+  --cos-border-focus: rgba(110, 168, 222, 0.5);
+  --cos-gold:         #c8a96e;
+  --cos-gold-dim:     rgba(200, 169, 110, 0.55);
+  --cos-blue:         #6ea8de;
+  --cos-text:         #d8dce8;
+  --cos-text-dim:     #7a8399;
+  --cos-text-bright:  #eef0f6;
+  --cos-mark-bg:      rgba(200, 169, 110, 0.2);
+  --cos-mark-text:    #c8a96e;
+}
+
+/* Page wrapper */
+.cos-search-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+  font-family: 'Crimson Pro', Georgia, serif;
+  color: var(--cos-text);
+}
+
+/* Header */
+.cos-search-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cos-blue);
+  margin: 0 0 10px;
+}
+
+.cos-search-title {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--cos-text-bright);
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+}
+
+/* Search bar */
+.cos-search-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--cos-surface);
+  border: 0.5px solid var(--cos-border-focus);
+  border-radius: 4px;
+  padding: 0 14px;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cos-search-bar-wrap:focus-within {
+  border-color: var(--cos-blue);
+  box-shadow: 0 0 0 3px rgba(110, 168, 222, 0.1);
+}
+
+.cos-search-ico {
+  color: var(--cos-text-dim);
+  flex-shrink: 0;
+}
+
+.cos-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 14px 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: var(--cos-text);
+  letter-spacing: 0.02em;
+}
+
+.cos-search-input::placeholder {
+  color: var(--cos-text-dim);
+}
+
+/* Filter tags */
+.cos-filter-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.cos-filter-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cos-text-dim);
+  margin-right: 4px;
+}
+
+.cos-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cos-text-dim);
+  background: transparent;
+  border: 0.5px solid var(--cos-border);
+  border-radius: 2px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.cos-tag:hover {
+  color: var(--cos-gold);
+  border-color: var(--cos-gold-dim);
+  background: rgba(200, 169, 110, 0.05);
+}
+
+.cos-tag.active {
+  color: var(--cos-blue);
+  border-color: rgba(110, 168, 222, 0.4);
+  background: rgba(110, 168, 222, 0.07);
+}
+
+/* Results meta */
+.cos-results-meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--cos-text-dim);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Result cards */
+.cos-result-card {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+  row-gap: 4px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--cos-border);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.cos-result-card:first-child {
+  border-top: 0.5px solid var(--cos-border);
+}
+
+.cos-result-card:hover {
+  background: rgba(110, 168, 222, 0.04);
+  padding-left: 8px;
+  margin-left: -8px;
+  padding-right: 8px;
+  border-radius: 3px;
+}
+
+.cos-result-cat {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cos-blue);
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 3px;
+}
+
+.cos-result-title {
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--cos-text-bright);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.cos-result-date {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  color: var(--cos-text-dim);
+  letter-spacing: 0.06em;
+  grid-column: 3;
+  grid-row: 1;
+  white-space: nowrap;
+}
+
+.cos-result-snippet {
+  font-family: 'Crimson Pro', serif;
+  font-size: 13px;
+  color: var(--cos-text-dim);
+  line-height: 1.6;
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+/* Highlighted search terms */
+.cos-result-card mark,
+.cos-result-snippet mark {
+  background: var(--cos-mark-bg);
+  color: var(--cos-mark-text);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Empty / idle states */
+.cos-empty,
+.cos-idle {
+  text-align: center;
+  padding: 4rem 0;
+  font-family: 'Crimson Pro', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--cos-text-dim);
+}
+
+.cos-empty-icon {
+  display: block;
+  font-style: normal;
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: var(--cos-border-focus);
+}
+
+.cos-empty-sub {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.cos-loading {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: var(--cos-text-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+}
