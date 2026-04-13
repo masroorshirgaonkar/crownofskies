@@ -457,3 +457,30 @@ pre {
   }
 
 }
+
+.cos-nav-search {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cos-nav-search-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 14px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.cos-nav-search-link:hover {
+  opacity: 1;
+}
+
+.cos-nav-search-link svg {
+  flex-shrink: 0;
+}
