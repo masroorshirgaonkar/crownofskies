@@ -1,7 +1,3 @@
----
-layout: none
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +5,12 @@ layout: none
   <title>{{ page.title }} | Crown of Skies</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/search.css' | prepend: site.baseurl }}">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body class="{{ page.page_class | default: 'page-default' }}">
-
 <header class="topnav">
   <div class="nav-title">Crown of Skies</div>
-
   <nav>
-    {% include search-bar.html %}
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/lore/' | relative_url }}">Lore</a>
     <a href="{{ '/profiles/' | relative_url }}">Profiles</a>
@@ -30,34 +20,25 @@ layout: none
     <a href="{{ '/files/' | relative_url }}">Files</a>
   </nav>
 </header>
-
 <div class="page">
-
   <div class="layout">
-
     <aside class="sidebar">
       <h3>Archive</h3>
-
       <a href="{{ '/regions/' | relative_url }}">Regions</a>
       <a href="{{ '/lore/' | relative_url }}">Lore</a>
       <a href="{{ '/profiles/' | relative_url }}">Profiles</a>
       <a href="{{ '/magic/' | relative_url }}">Magic</a>
-      <a href="{{ '/tech/' | relative_url }}">Tech</a> 
+      <a href="{{ '/tech/' | relative_url }}">Tech</a>
       <a href="{{ '/news/' | relative_url }}">News</a>
       <a href="{{ '/files/' | relative_url }}">Files</a>
     </aside>
-
     <main>
       {{ content }}
     </main>
-
   </div>
-
 </div>
-
 <footer>
   Crown of Skies Archive · Unauthorized Reality Database
 </footer>
-
 </body>
 </html>
