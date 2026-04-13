@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Crown of Skies
+title: Novas
 ---
 
 ## Nova
