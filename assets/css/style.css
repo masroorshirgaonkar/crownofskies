@@ -484,3 +484,14 @@ pre {
 .cos-nav-search-link svg {
   flex-shrink: 0;
 }
+
+.cos-nav-search-link {
+  color: #9fc4ff !important;
+  opacity: 1 !important;
+  margin-left: 1.2rem;
+}
+
+.cos-nav-search-link:hover {
+  color: #ffffff !important;
+  background: rgba(120, 170, 255, 0.12) !important;
+}
