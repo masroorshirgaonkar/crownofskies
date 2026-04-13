@@ -45,7 +45,6 @@ permalink: /search/
   </div>
 </div>
 
-<!-- Lunr.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
 
 <script>
@@ -62,7 +61,6 @@ permalink: /search/
   var idle    = document.getElementById('cos-idle');
   var tags    = document.querySelectorAll('.cos-tag');
 
-  // Load the search index
   fetch('{{ "/search.json" | prepend: site.baseurl }}')
     .then(function(r){ return r.json(); })
     .then(function(data){
@@ -76,7 +74,6 @@ permalink: /search/
       });
     });
 
-  // Filter tag buttons
   tags.forEach(function(tag){
     tag.addEventListener('click', function(){
       tags.forEach(function(t){ t.classList.remove('active'); });
@@ -86,7 +83,6 @@ permalink: /search/
     });
   });
 
-  // Search input
   input.addEventListener('input', function(){
     currentQuery = this.value.trim();
     render(currentQuery);
