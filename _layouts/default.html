@@ -81,7 +81,7 @@
       results.innerHTML = '';
       return;
     }
-    var matched = searchIndex.search(query)
+    var matched = searchIndex.search(query + ' ' + query + '*')
       .map(function(r){ return allDocs.find(function(d){ return d.url === r.ref; }); })
       .filter(Boolean);
     if (!matched.length) {
